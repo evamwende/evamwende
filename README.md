@@ -1,3 +1,5 @@
+<img src="data-data-everywhere.png" alt="Data Data Everywhere" width="400"/>
+
 # Hi, I’m Eva Mwende 👋
 
 **Data Analyst | MSc Operational Research @ University of Edinburgh**
@@ -10,7 +12,7 @@ Welcome! I'm Eva Mwende, a data analyst in the making with a passion for turning
 
 - **Technical:** Python (Pandas, NumPy), SQL, Advanced Excel, R, Tableau, Power BI
 - **Core Strengths:** Statistical Analysis, Predictive Analytics, Data Visualization, End-to-End Data Management
-- **Passionate About:** Applying rigorous analytical methods to uncover patterns, predict trends and inform data-driven decisions
+- **Passionate About:** Applying rigorous analytical methods to uncover patterns, predict trends, and inform data-driven decisions
 
 ---
 
@@ -43,4 +45,4 @@ Want to collaborate or chat about data?
 
 ---
 
-> “Always curious, always learning and always ready to turn data into impact!”
+> “Always curious, always learning, and always ready to turn data into impact!”
