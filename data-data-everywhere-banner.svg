@@ -1,23 +1,71 @@
-<svg width="800" height="160" viewBox="0 0 800 160" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect x="8" y="8" width="784" height="144" rx="40" fill="#FFE2F7" stroke="#F77CE2" stroke-width="7"/>
-  <!-- Bouncing Bubble Letters -->
-  <text x="70" y="80" font-size="68" font-family="'Comic Sans MS', 'Comic Sans', cursive" font-weight="bold"
-        fill="#F77CE2" stroke="#FFB7F5" stroke-width="3"
-        style="paint-order: stroke; letter-spacing: 12px;">
-    DATA
-  </text>
-  <text x="315" y="110" font-size="68" font-family="'Comic Sans MS', 'Comic Sans', cursive" font-weight="bold"
-        fill="#F77CE2" stroke="#FFB7F5" stroke-width="3"
-        style="paint-order: stroke; letter-spacing: 12px;">
-    DATA
-  </text>
-  <text x="510" y="80" font-size="48" font-family="'Comic Sans MS', 'Comic Sans', cursive" font-weight="bold"
-        fill="#F77CE2" stroke="#FFB7F5" stroke-width="3"
-        style="paint-order: stroke; letter-spacing: 8px;">
-    EVERYWHERE
-  </text>
-  <!-- Fun bouncing effect using ellipses below the letters -->
-  <ellipse cx="120" cy="130" rx="25" ry="9" fill="#FFB7F5" opacity="0.7"/>
-  <ellipse cx="370" cy="150" rx="25" ry="9" fill="#FFB7F5" opacity="0.7"/>
-  <ellipse cx="570" cy="130" rx="40" ry="10" fill="#FFB7F5" opacity="0.7"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="1200" height="320" aria-labelledby="title desc">
+  <title id="title">Data Data Everywhere — fun pink bubble banner</title>
+  <desc id="desc">A wide pink banner with bouncing bubble letters and data icons</desc>
+  <style>
+    .bounce { transform-origin: center; }
+    @keyframes bob {
+      0% { transform: translateY(0); }
+      20% { transform: translateY(-14px); }
+      40% { transform: translateY(0); }
+      60% { transform: translateY(-8px); }
+      100% { transform: translateY(0); }
+    }
+    .word1 { animation: bob 2.4s ease-in-out infinite; }
+    .word2 { animation: bob 2.4s ease-in-out infinite; animation-delay: .2s; }
+    .word3 { animation: bob 2.4s ease-in-out infinite; animation-delay: .4s; }
+  </style>
+  <rect x="12" y="12" width="1176" height="296" rx="60" fill="#ffd6ea" stroke="#ff4e9a" stroke-width="8" />
+  <!-- Icons -->
+  <!-- Pie chart -->
+  <g>
+    <circle cx="120" cy="90" r="36" fill="#ffb2d9" stroke="#ff6b9f" stroke-width="4"/>
+    <path d="M120,54 A36,36 0 0 1 153,77 L132,77 A12,12 0 0 0 120,66 Z" fill="#ff84b6" />
+  </g>
+  <!-- Bar chart & line -->
+  <g>
+    <rect x="1050" y="85" width="20" height="60" rx="4" fill="#ffb2d9"/>
+    <rect x="1075" y="60" width="20" height="85" rx="4" fill="#ff84b6"/>
+    <rect x="1100" y="40" width="20" height="105" rx="4" fill="#ff5a9f"/>
+    <polyline points="1060,145 1085,120 1110,90 1130,60" fill="none" stroke="#ff4e9a" stroke-width="6" stroke-linecap="round" />
+  </g>
+  <!-- Chat bubble -->
+  <g>
+    <rect x="60" y="170" width="86" height="48" rx="16" fill="#ffd6ea" stroke="#ff6b9f" stroke-width="3"/>
+    <polygon points="106,218 96,200 116,200" fill="#ffd6ea" stroke="#ff6b9f" stroke-width="3"/>
+  </g>
+  <!-- Location pin -->
+  <g>
+    <path d="M1120,200 C1130,200 1140,210 1140,222 C1140,240 1120,270 1120,270 C1120,270 1100,240 1100,222 C1100,210 1110,200 1120,200 Z" fill="#ffc0dd" stroke="#ff6b9f" stroke-width="3"/>
+    <circle cx="1120" cy="222" r="10" fill="#ff5a9f"/>
+  </g>
+  <!-- Bubble text -->
+  <g>
+    <g class="bounce word1" style="animation-delay:0s">
+      <text x="340" y="120" font-family="'Arial Black', 'Comic Sans MS', cursive" font-size="110" font-weight="900" letter-spacing="8"
+            fill="#ffc0dd" stroke="#ff4e9a" stroke-width="7" paint-order="stroke fill">DATA</text>
+    </g>
+    <g class="bounce word2" style="animation-delay:0.2s">
+      <text x="340" y="210" font-family="'Arial Black', 'Comic Sans MS', cursive" font-size="110" font-weight="900" letter-spacing="8"
+            fill="#ffc0dd" stroke="#ff4e9a" stroke-width="7" paint-order="stroke fill">DATA</text>
+    </g>
+    <g class="bounce word3" style="animation-delay:0.4s">
+      <text x="310" y="290" font-family="'Arial Black', 'Comic Sans MS', cursive" font-size="72" font-weight="900" letter-spacing="8"
+            fill="#ffc0dd" stroke="#ff4e9a" stroke-width="7" paint-order="stroke fill">EVERYWHERE</text>
+    </g>
+  </g>
+  <!-- Decorative dots -->
+  <circle cx="180" cy="60" r="6" fill="#ff84b6" opacity="0.7"/>
+  <circle cx="1100" cy="120" r="5" fill="#ff8fc0" opacity="0.7"/>
+  <circle cx="250" cy="210" r="4.5" fill="#ff7ab1" opacity="0.7"/>
+  <circle cx="900" cy="80" r="7" fill="#ffd6ea" opacity="0.7"/>
+  <!-- Small bar chart bottom left -->
+  <rect x="120" y="250" width="14" height="28" rx="3" fill="#ffb2d9"/>
+  <rect x="140" y="242" width="14" height="36" rx="3" fill="#ff84b6"/>
+  <rect x="160" y="235" width="14" height="43" rx="3" fill="#ff5a9f"/>
+  <!-- Small gear -->
+  <g>
+    <circle cx="1080" cy="270" r="18" fill="#ffb2d9" stroke="#ff6b9f" stroke-width="4"/>
+    <rect x="1072" y="252" width="16" height="36" rx="3" fill="#ffc0dd" transform="rotate(25 1080 270)"/>
+    <rect x="1072" y="252" width="16" height="36" rx="3" fill="#ffc0dd" transform="rotate(-25 1080 270)"/>
+  </g>
 </svg>
