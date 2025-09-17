@@ -1,4 +1,4 @@
-<img src="data-data-everywhere.png" alt="Data Data Everywhere" width="400"/>
+<img src="data-data-everywhere-banner.svg" alt="Data Data Everywhere Banner" width="600"/>
 
 # Hi, I’m Eva Mwende 👋
 
