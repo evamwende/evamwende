@@ -1,4 +1,4 @@
-<img src="data-data-everywhere-banner.svg" alt="Data Data Everywhere Banner" width="600"/>
+<img src="data-data-everywhere-banner.svg" alt="Data Data Everywhere Banner" width="800"/>
 
 # Hi, I’m Eva Mwende 👋
 
@@ -16,12 +16,12 @@ Welcome! I'm Eva Mwende, a data analyst in the making with a passion for turning
 
 ---
 
-## 📫 Connect with Me
+## <img src="lets-connect-banner.svg" alt="Let's Connect Banner" width="400"/>
 
 Want to collaborate or chat about data?  
 [LinkedIn](https://www.linkedin.com/in/eva-mwende-634906198)
 
-<img src="lets-connect-banner.svg" alt="Let's Connect Banner" width="800"/>
+
 
 ---
 
