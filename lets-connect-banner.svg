@@ -1,40 +1,74 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 220" width="900" height="220" aria-labelledby="title desc">
-  <title id="title">Let's Connect Banner</title>
-  <desc id="desc">Fun pink banner with bubbly text and modern social icons</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="1200" height="320" aria-labelledby="title desc">
+  <title id="title">Let's Connect on GitHub — fun sparkling banner</title>
+  <desc id="desc">A wide pink banner with bouncing bubble letters and GitHub icons, enhanced with sparkles.</desc>
+  <style>
+    .bounce { transform-origin: center; }
+    @keyframes bob {
+      0% { transform: translateY(0); }
+      20% { transform: translateY(-14px); }
+      40% { transform: translateY(0); }
+      60% { transform: translateY(-8px); }
+      100% { transform: translateY(0); }
+    }
+    .word1 { animation: bob 2.4s ease-in-out infinite; }
+    .word2 { animation: bob 2.4s ease-in-out infinite; animation-delay: .2s; }
+    .word3 { animation: bob 2.4s ease-in-out infinite; animation-delay: .4s; }
+
+    /* Sparkle styles */
+    .sparkle {
+      fill: #fff;
+      animation: sparkle-fade 1.5s ease-out infinite;
+      opacity: 0;
+    }
+    @keyframes sparkle-fade {
+      0% { transform: scale(0) rotate(0deg); opacity: 0; }
+      50% { transform: scale(1) rotate(180deg); opacity: 1; }
+      100% { transform: scale(0) rotate(360deg); opacity: 0; }
+    }
+    .sparkle-delay-1 { animation-delay: 0.1s; }
+    .sparkle-delay-2 { animation-delay: 0.3s; }
+    .sparkle-delay-3 { animation-delay: 0.5s; }
+    .sparkle-delay-4 { animation-delay: 0.7s; }
+  </style>
   <defs>
-    <linearGradient id="bg" x1="0" x2="1">
-      <stop offset="0%" stop-color="#ffeef6"/>
-      <stop offset="70%" stop-color="#ffd7ef"/>
-      <stop offset="100%" stop-color="#fff"/>
-    </linearGradient>
-    <linearGradient id="gold" x1="0" x2="1">
-      <stop offset="0%" stop-color="#f7c873"/>
-      <stop offset="100%" stop-color="#ffd67a"/>
-    </linearGradient>
+    <g id="sparkle-star">
+      <polygon points="0,-10 2.9,-4 9.5,-3.1 4.7,0.7 5.9,7.6 0,4.4 -5.9,7.6 -4.7,0.7 -9.5,-3.1 -2.9,-4" />
+    </g>
   </defs>
-  <rect x="0" y="0" width="900" height="220" rx="38" fill="url(#bg)" stroke="#ff6fa3" stroke-width="5"/>
-  <text x="60" y="90" font-size="56" font-family="'Pacifico', cursive, 'Arial Black', sans-serif" fill="#ff6fa3" font-weight="bold">Let's</text>
-  <text x="250" y="92" font-size="54" font-family="'Arial Black', 'Montserrat', sans-serif" fill="#3a1f2b" font-weight="bold">Connect!</text>
-  <text x="62" y="130" font-size="22" font-family="'Montserrat', 'Segoe UI', sans-serif" fill="#4f2f3f" opacity="0.95">Say hi, collab, chat about data, or just wave 👋</text>
-  <rect x="680" y="26" width="160" height="40" rx="20" fill="url(#gold)" stroke="#f7c873" stroke-width="2"/>
-  <text x="720" y="56" font-size="22" font-family="'Montserrat', sans-serif" fill="#5a3200" font-weight="bold">Now Live!</text>
-  <g>
-    <rect x="120" y="150" width="44" height="44" rx="12" fill="#fff" stroke="#ff84b6" stroke-width="1.5"/>
-    <path d="M126 162 L142 174 L158 162" stroke="#ff6fa3" stroke-width="2" fill="none"/>
-    <rect x="126" y="158" width="32" height="18" rx="3" stroke="#ff6fa3" stroke-width="1.2" fill="none"/>
-    <rect x="180" y="150" width="44" height="44" rx="12" fill="#fff" stroke="#ff84b6" stroke-width="1.5"/>
-    <path d="M192 164c9 2 15-6 17-12-7 4-16 7-25 9 6-7 0-13-8-13-7 0-13 6-13 13 0 1 0 2 .1 3-9-.5-17-6-22-14-.3 1-.5 3-.5 4 0 5 2 10 7 12-2 0-4-1-5-2v.1c0 7 6 13 14 14-2 .4-5 .1-7 .1-1 0-3 0-4-.2 3 7 13 10 23 10-9 7-19 10-31 10-.2 0-.3 0-.5 0 11 7 23 12 36 12 43 0 67-34 67-65v-3c5-3 10-9 14-14-7 3-13 6-20 6z" stroke="#ff6fa3" stroke-width="1.2" fill="none"/>
-    <rect x="240" y="150" width="44" height="44" rx="12" fill="#fff" stroke="#ff84b6" stroke-width="1.5"/>
-    <rect x="244" y="158" width="36" height="28" rx="3" stroke="#ff6fa3" stroke-width="1.2" fill="none"/>
-    <circle cx="262" cy="167" r="7" stroke="#ff6fa3" stroke-width="1.2" fill="none"/>
-    <rect x="260" y="178" width="4" height="14" rx="1" fill="#ff6fa3"/>
-    <rect x="270" y="178" width="4" height="14" rx="1" fill="#ff6fa3"/>
+
+  <rect x="12" y="12" width="1176" height="296" rx="60" fill="#fce4ec" stroke="#e91e63" stroke-width="8" />
+
+  <g transform="translate(100, 160) scale(0.9)">
+    <path fill="#24292e" d="M12 0c-6.63 0-12 5.37-12 12s5.37 12 12 12c5.29 0 9.7-3.43 11.33-8.23-0.08-0.18-0.15-0.34-0.23-0.5h-2.1c-0.25 0.52-0.56 1-0.95 1.43-1.48 1.48-3.47 2.22-5.75 2.22-4.58 0-8.29-3.71-8.29-8.29s3.71-8.29 8.29-8.29c2.28 0 4.27 0.74 5.75 2.22 0.39 0.43 0.7 0.91 0.95 1.43h2.1c0.08-0.16 0.15-0.32 0.23-0.5c-1.63-4.8-6.04-8.23-11.33-8.23zM8.33 4.54c-1.47 0-2.66 1.19-2.66 2.66s1.19 2.66 2.66 2.66 2.66-1.19 2.66-2.66-1.19-2.66-2.66-2.66zM15.67 4.54c-1.47 0-2.66 1.19-2.66 2.66s1.19 2.66 2.66 2.66 2.66-1.19 2.66-2.66-1.19-2.66-2.66-2.66z"/>
   </g>
-  <circle cx="70" cy="40" r="8" fill="#ffb2d9" opacity="0.7"/>
-  <circle cx="860" cy="70" r="8" fill="#ffd7ef" opacity="0.7"/>
-  <circle cx="730" cy="200" r="7" fill="#ff6fa3" opacity="0.6"/>
-  <circle cx="180" cy="60" r="6" fill="#f7c873" opacity="0.7"/>
-  <rect x="370" y="150" width="240" height="44" rx="22" fill="url(#gold)" stroke="#ffd67a" stroke-width="1.5"/>
-  <text x="395" y="180" font-size="22" font-family="'Montserrat', sans-serif" fill="#4b2a00" font-weight="bold">Book a quick chat!</text>
-  <text x="400" y="203" font-size="15" font-family="'Montserrat', sans-serif" fill="#4b2a00" opacity="0.7">15–30 min | friendly & informal</text>
+
+  <g>
+    <g class="bounce word1" style="animation-delay:0s">
+      <text x="340" y="120" font-family="'Arial Black', 'Comic Sans MS', cursive" font-size="110" font-weight="900" letter-spacing="8"
+            fill="#ffbbd4" stroke="#e91e63" stroke-width="7" paint-order="stroke fill">LET'S</text>
+      <use href="#sparkle-star" class="sparkle sparkle-delay-1" transform="translate(300, 100) scale(0.6)" />
+      <use href="#sparkle-star" class="sparkle sparkle-delay-2" transform="translate(450, 80) scale(0.4)" />
+      <use href="#sparkle-star" class="sparkle sparkle-delay-3" transform="translate(620, 110) scale(0.7)" />
+    </g>
+    <g class="bounce word2" style="animation-delay:0.2s">
+      <text x="340" y="210" font-family="'Arial Black', 'Comic Sans MS', cursive" font-size="110" font-weight="900" letter-spacing="8"
+            fill="#ffbbd4" stroke="#e91e63" stroke-width="7" paint-order="stroke fill">CONNECT</text>
+      <use href="#sparkle-star" class="sparkle sparkle-delay-4" transform="translate(320, 180) scale(0.5)" />
+      <use href="#sparkle-star" class="sparkle sparkle-delay-1" transform="translate(500, 220) scale(0.7)" />
+      <use href="#sparkle-star" class="sparkle sparkle-delay-2" transform="translate(720, 190) scale(0.6)" />
+    </g>
+    <g class="bounce word3" style="animation-delay:0.4s">
+      <text x="310" y="290" font-family="'Arial Black', 'Comic Sans MS', cursive" font-size="72" font-weight="900" letter-spacing="8"
+            fill="#ffbbd4" stroke="#e91e63" stroke-width="7" paint-order="stroke fill">ON GITHUB</text>
+      <use href="#sparkle-star" class="sparkle sparkle-delay-3" transform="translate(280, 270) scale(0.4)" />
+      <use href="#sparkle-star" class="sparkle sparkle-delay-4" transform="translate(580, 260) scale(0.6)" />
+      <use href="#sparkle-star" class="sparkle sparkle-delay-1" transform="translate(780, 290) scale(0.5)" />
+    </g>
+  </g>
+
+  <circle cx="950" cy="80" r="7" fill="#ffd6ea" opacity="0.7"/>
+  <circle cx="1050" cy="180" r="6" fill="#ff84b6" opacity="0.7"/>
+  <circle cx="1100" cy="250" r="5" fill="#ffbbd4" opacity="0.7"/>
+  <rect x="90" y="60" width="20" height="40" rx="4" fill="#ffb2d9"/>
+  <rect x="120" y="40" width="20" height="60" rx="4" fill="#ff84b6"/>
 </svg>
