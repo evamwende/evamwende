@@ -1,72 +1,115 @@
- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200" width="800" height="200" aria-labelledby="title desc">
-            <title id="title">Let's Connect Banner</title>
-            <desc id="desc">A modern, animated banner with the text "Let's Connect"</desc>
-            
-            <defs>
-                <!-- Gradient definitions -->
-                <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" stop-color="#667eea" />
-                    <stop offset="100%" stop-color="#764ba2" />
-                </linearGradient>
+
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="1200" height="320" aria-labelledby="title desc">
+                <title id="title">Let's Connect - Enhanced Fun Banner</title>
+                <desc id="desc">A vibrant, animated banner with the text "Let's Connect" featuring gradients, floating elements, and sparkles</desc>
                 
-                <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                    <stop offset="0%" stop-color="#f093fb" />
-                    <stop offset="100%" stop-color="#f5576c" />
-                </linearGradient>
+                <defs>
+                    <!-- Gradients -->
+                    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#ff6b9d" />
+                        <stop offset="50%" stop-color="#c44569" />
+                        <stop offset="100%" stop-color="#ff9ebb" />
+                    </linearGradient>
+                    
+                    <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" stop-color="#ffd1dc" />
+                        <stop offset="50%" stop-color="#ffffff" />
+                        <stop offset="100%" stop-color="#ffd1dc" />
+                    </linearGradient>
+                    
+                    <radialGradient id="circleGradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+                        <stop offset="0%" stop-color="#ffffff" stop-opacity="0.8" />
+                        <stop offset="100%" stop-color="#ffffff" stop-opacity="0.2" />
+                    </radialGradient>
+                    
+                    <!-- Sparkle shape -->
+                    <g id="sparkle">
+                        <path d="M0,-8 L2.5,-3 L8,-3 L4,1 L5,8 L0,4 L-5,8 L-4,1 L-8,-3 L-2.5,-3 Z" fill="#ffffff" />
+                    </g>
+                    
+                    <!-- GitHub Cat -->
+                    <g id="github-cat">
+                        <path d="M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z" fill="#ffffff"/>
+                    </g>
+                    
+                    <!-- Animation keyframes -->
+                    <style>
+                        @keyframes float {
+                            0%, 100% { transform: translateY(0); }
+                            50% { transform: translateY(-15px); }
+                        }
+                        
+                        @keyframes sparkle {
+                            0%, 100% { opacity: 0; transform: scale(0) rotate(0deg); }
+                            50% { opacity: 1; transform: scale(1) rotate(180deg); }
+                        }
+                        
+                        @keyframes pulse {
+                            0%, 100% { transform: scale(1); }
+                            50% { transform: scale(1.05); }
+                        }
+                        
+                        @keyframes bounce {
+                            0%, 100% { transform: translateY(0); }
+                            20% { transform: translateY(-14px); }
+                            40% { transform: translateY(0); }
+                            60% { transform: translateY(-8px); }
+                        }
+                        
+                        .floating {
+                            animation: float 4s ease-in-out infinite;
+                        }
+                        
+                        .sparkling {
+                            animation: sparkle 2s ease-in-out infinite;
+                        }
+                        
+                        .pulsing {
+                            animation: pulse 2s ease-in-out infinite;
+                        }
+                        
+                        .bouncing {
+                            animation: bounce 2.4s ease-in-out infinite;
+                        }
+                    </style>
+                </defs>
                 
-                <!-- Sparkle definition -->
-                <g id="sparkle">
-                    <path d="M0,0 L3,5 L8,5 L4,8 L5,13 L0,10 L-5,13 L-4,8 L-8,5 L-3,5 Z" fill="#ffffff" />
+                <!-- Background with gradient -->
+                <rect width="100%" height="100%" fill="url(#bgGradient)" rx="30" />
+                
+                <!-- Decorative floating circles -->
+                <circle cx="150" cy="80" r="25" fill="url(#circleGradient)" class="floating" style="animation-delay: 0s;" />
+                <circle cx="1050" cy="60" r="20" fill="url(#circleGradient)" class="floating" style="animation-delay: 1s;" />
+                <circle cx="250" cy="250" r="15" fill="url(#circleGradient)" class="floating" style="animation-delay: 0.5s;" />
+                <circle cx="950" cy="280" r="18" fill="url(#circleGradient)" class="floating" style="animation-delay: 1.5s;" />
+                <circle cx="1100" cy="180" r="12" fill="url(#circleGradient)" class="floating" style="animation-delay: 0.8s;" />
+                
+                <!-- GitHub icons -->
+                <g transform="translate(100, 160) scale(1.2)">
+                    <use href="#github-cat" x="0" y="0" class="pulsing" />
                 </g>
                 
-                <!-- Animation definitions -->
-                <style>
-                    @keyframes float {
-                        0%, 100% { transform: translateY(0); }
-                        50% { transform: translateY(-10px); }
-                    }
-                    
-                    @keyframes sparkle {
-                        0%, 100% { opacity: 0; transform: scale(0); }
-                        50% { opacity: 1; transform: scale(1); }
-                    }
-                    
-                    @keyframes pulse {
-                        0%, 100% { transform: scale(1); }
-                        50% { transform: scale(1.05); }
-                    }
-                    
-                    .floating {
-                        animation: float 3s ease-in-out infinite;
-                    }
-                    
-                    .sparkling {
-                        animation: sparkle 2s ease-in-out infinite;
-                    }
-                    
-                    .pulsing {
-                        animation: pulse 2s ease-in-out infinite;
-                    }
-                </style>
-            </defs>
-            
-            <!-- Background -->
-            <rect width="100%" height="100%" fill="url(#bgGradient)" rx="20" />
-            
-            <!-- Decorative elements -->
-            <circle cx="100" cy="50" r="15" fill="#ffffff" opacity="0.3" class="floating" style="animation-delay: 0s;" />
-            <circle cx="700" cy="80" r="20" fill="#ffffff" opacity="0.2" class="floating" style="animation-delay: 1s;" />
-            <circle cx="200" cy="150" r="10" fill="#ffffff" opacity="0.4" class="floating" style="animation-delay: 0.5s;" />
-            <circle cx="650" cy="150" r="12" fill="#ffffff" opacity="0.3" class="floating" style="animation-delay: 1.5s;" />
-            
-            <!-- Main text -->
-            <text x="400" y="120" text-anchor="middle" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="url(#textGradient)" class="pulsing">
-                Let's Connect
-            </text>
-            
-            <!-- Sparkles -->
-            <use href="#sparkle" x="300" y="80" class="sparkling" style="animation-delay: 0.2s;" />
-            <use href="#sparkle" x="500" y="80" class="sparkling" style="animation-delay: 0.8s;" />
-            <use href="#sparkle" x="350" y="150" class="sparkling" style="animation-delay: 1.4s;" />
-            <use href="#sparkle" x="450" y="150" class="sparkling" style="animation-delay: 0.5s;" />
-        </svg>
+                <g transform="translate(1000, 160) scale(1.2)">
+                    <use href="#github-cat" x="0" y="0" class="pulsing" style="animation-delay: 0.5s;" />
+                </g>
+                
+                <!-- Main text with gradient and bounce animation -->
+                <g>
+                    <g class="bouncing" style="animation-delay: 0s">
+                        <text x="600" y="140" text-anchor="middle" font-family="'Arial Black', 'Comic Sans MS', cursive" font-size="90" font-weight="900" 
+                              fill="url(#textGradient)" stroke="#c44569" stroke-width="4" paint-order="stroke fill">LET'S</text>
+                    </g>
+                    <g class="bouncing" style="animation-delay: 0.2s">
+                        <text x="600" y="230" text-anchor="middle" font-family="'Arial Black', 'Comic Sans MS', cursive" font-size="90" font-weight="900" 
+                              fill="url(#textGradient)" stroke="#c44569" stroke-width="4" paint-order="stroke fill">CONNECT</text>
+                    </g>
+                </g>
+                
+                <!-- Sparkles -->
+                <use href="#sparkle" x="400" y="100" class="sparkling" style="animation-delay: 0.2s;" />
+                <use href="#sparkle" x="800" y="100" class="sparkling" style="animation-delay: 0.8s;" />
+                <use href="#sparkle" x="500" y="180" class="sparkling" style="animation-delay: 1.4s;" />
+                <use href="#sparkle" x="700" y="180" class="sparkling" style="animation-delay: 0.5s;" />
+                <use href="#sparkle" x="450" y="250" class="sparkling" style="animation-delay: 1.1s;" />
+                <use href="#sparkle" x="750" y="250" class="sparkling" style="animation-delay: 0.3s;" />
+            </svg>
