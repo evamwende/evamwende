@@ -2,7 +2,7 @@
 
 # Hi, I’m Eva Mwende 👋
 
-**Data Analyst | MSc Operational Research @ University of Edinburgh**
+**Data Analyst | MSc Operational Research @ The University of Edinburgh**
 
 Welcome! I'm Eva Mwende, a data analyst in the making with a passion for turning messy datasets into meaningful stories. Currently completing my MSc in Operational Research at the University of Edinburgh, I focus on statistical modeling, econometrics, and data visualization.
 
