@@ -1,74 +1,72 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="1200" height="320" aria-labelledby="title desc">
-  <title id="title">Let's Connect on GitHub — fun sparkling banner</title>
-  <desc id="desc">A wide pink banner with bouncing bubble letters and GitHub icons, enhanced with sparkles.</desc>
-  <style>
-    .bounce { transform-origin: center; }
-    @keyframes bob {
-      0% { transform: translateY(0); }
-      20% { transform: translateY(-14px); }
-      40% { transform: translateY(0); }
-      60% { transform: translateY(-8px); }
-      100% { transform: translateY(0); }
-    }
-    .word1 { animation: bob 2.4s ease-in-out infinite; }
-    .word2 { animation: bob 2.4s ease-in-out infinite; animation-delay: .2s; }
-    .word3 { animation: bob 2.4s ease-in-out infinite; animation-delay: .4s; }
-
-    /* Sparkle styles */
-    .sparkle {
-      fill: #fff;
-      animation: sparkle-fade 1.5s ease-out infinite;
-      opacity: 0;
-    }
-    @keyframes sparkle-fade {
-      0% { transform: scale(0) rotate(0deg); opacity: 0; }
-      50% { transform: scale(1) rotate(180deg); opacity: 1; }
-      100% { transform: scale(0) rotate(360deg); opacity: 0; }
-    }
-    .sparkle-delay-1 { animation-delay: 0.1s; }
-    .sparkle-delay-2 { animation-delay: 0.3s; }
-    .sparkle-delay-3 { animation-delay: 0.5s; }
-    .sparkle-delay-4 { animation-delay: 0.7s; }
-  </style>
-  <defs>
-    <g id="sparkle-star">
-      <polygon points="0,-10 2.9,-4 9.5,-3.1 4.7,0.7 5.9,7.6 0,4.4 -5.9,7.6 -4.7,0.7 -9.5,-3.1 -2.9,-4" />
-    </g>
-  </defs>
-
-  <rect x="12" y="12" width="1176" height="296" rx="60" fill="#fce4ec" stroke="#e91e63" stroke-width="8" />
-
-  <g transform="translate(100, 160) scale(0.9)">
-    <path fill="#24292e" d="M12 0c-6.63 0-12 5.37-12 12s5.37 12 12 12c5.29 0 9.7-3.43 11.33-8.23-0.08-0.18-0.15-0.34-0.23-0.5h-2.1c-0.25 0.52-0.56 1-0.95 1.43-1.48 1.48-3.47 2.22-5.75 2.22-4.58 0-8.29-3.71-8.29-8.29s3.71-8.29 8.29-8.29c2.28 0 4.27 0.74 5.75 2.22 0.39 0.43 0.7 0.91 0.95 1.43h2.1c0.08-0.16 0.15-0.32 0.23-0.5c-1.63-4.8-6.04-8.23-11.33-8.23zM8.33 4.54c-1.47 0-2.66 1.19-2.66 2.66s1.19 2.66 2.66 2.66 2.66-1.19 2.66-2.66-1.19-2.66-2.66-2.66zM15.67 4.54c-1.47 0-2.66 1.19-2.66 2.66s1.19 2.66 2.66 2.66 2.66-1.19 2.66-2.66-1.19-2.66-2.66-2.66z"/>
-  </g>
-
-  <g>
-    <g class="bounce word1" style="animation-delay:0s">
-      <text x="340" y="120" font-family="'Arial Black', 'Comic Sans MS', cursive" font-size="110" font-weight="900" letter-spacing="8"
-            fill="#ffbbd4" stroke="#e91e63" stroke-width="7" paint-order="stroke fill">LET'S</text>
-      <use href="#sparkle-star" class="sparkle sparkle-delay-1" transform="translate(300, 100) scale(0.6)" />
-      <use href="#sparkle-star" class="sparkle sparkle-delay-2" transform="translate(450, 80) scale(0.4)" />
-      <use href="#sparkle-star" class="sparkle sparkle-delay-3" transform="translate(620, 110) scale(0.7)" />
-    </g>
-    <g class="bounce word2" style="animation-delay:0.2s">
-      <text x="340" y="210" font-family="'Arial Black', 'Comic Sans MS', cursive" font-size="110" font-weight="900" letter-spacing="8"
-            fill="#ffbbd4" stroke="#e91e63" stroke-width="7" paint-order="stroke fill">CONNECT</text>
-      <use href="#sparkle-star" class="sparkle sparkle-delay-4" transform="translate(320, 180) scale(0.5)" />
-      <use href="#sparkle-star" class="sparkle sparkle-delay-1" transform="translate(500, 220) scale(0.7)" />
-      <use href="#sparkle-star" class="sparkle sparkle-delay-2" transform="translate(720, 190) scale(0.6)" />
-    </g>
-    <g class="bounce word3" style="animation-delay:0.4s">
-      <text x="310" y="290" font-family="'Arial Black', 'Comic Sans MS', cursive" font-size="72" font-weight="900" letter-spacing="8"
-            fill="#ffbbd4" stroke="#e91e63" stroke-width="7" paint-order="stroke fill">ON GITHUB</text>
-      <use href="#sparkle-star" class="sparkle sparkle-delay-3" transform="translate(280, 270) scale(0.4)" />
-      <use href="#sparkle-star" class="sparkle sparkle-delay-4" transform="translate(580, 260) scale(0.6)" />
-      <use href="#sparkle-star" class="sparkle sparkle-delay-1" transform="translate(780, 290) scale(0.5)" />
-    </g>
-  </g>
-
-  <circle cx="950" cy="80" r="7" fill="#ffd6ea" opacity="0.7"/>
-  <circle cx="1050" cy="180" r="6" fill="#ff84b6" opacity="0.7"/>
-  <circle cx="1100" cy="250" r="5" fill="#ffbbd4" opacity="0.7"/>
-  <rect x="90" y="60" width="20" height="40" rx="4" fill="#ffb2d9"/>
-  <rect x="120" y="40" width="20" height="60" rx="4" fill="#ff84b6"/>
-</svg>
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200" width="800" height="200" aria-labelledby="title desc">
+            <title id="title">Let's Connect Banner</title>
+            <desc id="desc">A modern, animated banner with the text "Let's Connect"</desc>
+            
+            <defs>
+                <!-- Gradient definitions -->
+                <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#667eea" />
+                    <stop offset="100%" stop-color="#764ba2" />
+                </linearGradient>
+                
+                <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stop-color="#f093fb" />
+                    <stop offset="100%" stop-color="#f5576c" />
+                </linearGradient>
+                
+                <!-- Sparkle definition -->
+                <g id="sparkle">
+                    <path d="M0,0 L3,5 L8,5 L4,8 L5,13 L0,10 L-5,13 L-4,8 L-8,5 L-3,5 Z" fill="#ffffff" />
+                </g>
+                
+                <!-- Animation definitions -->
+                <style>
+                    @keyframes float {
+                        0%, 100% { transform: translateY(0); }
+                        50% { transform: translateY(-10px); }
+                    }
+                    
+                    @keyframes sparkle {
+                        0%, 100% { opacity: 0; transform: scale(0); }
+                        50% { opacity: 1; transform: scale(1); }
+                    }
+                    
+                    @keyframes pulse {
+                        0%, 100% { transform: scale(1); }
+                        50% { transform: scale(1.05); }
+                    }
+                    
+                    .floating {
+                        animation: float 3s ease-in-out infinite;
+                    }
+                    
+                    .sparkling {
+                        animation: sparkle 2s ease-in-out infinite;
+                    }
+                    
+                    .pulsing {
+                        animation: pulse 2s ease-in-out infinite;
+                    }
+                </style>
+            </defs>
+            
+            <!-- Background -->
+            <rect width="100%" height="100%" fill="url(#bgGradient)" rx="20" />
+            
+            <!-- Decorative elements -->
+            <circle cx="100" cy="50" r="15" fill="#ffffff" opacity="0.3" class="floating" style="animation-delay: 0s;" />
+            <circle cx="700" cy="80" r="20" fill="#ffffff" opacity="0.2" class="floating" style="animation-delay: 1s;" />
+            <circle cx="200" cy="150" r="10" fill="#ffffff" opacity="0.4" class="floating" style="animation-delay: 0.5s;" />
+            <circle cx="650" cy="150" r="12" fill="#ffffff" opacity="0.3" class="floating" style="animation-delay: 1.5s;" />
+            
+            <!-- Main text -->
+            <text x="400" y="120" text-anchor="middle" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="url(#textGradient)" class="pulsing">
+                Let's Connect
+            </text>
+            
+            <!-- Sparkles -->
+            <use href="#sparkle" x="300" y="80" class="sparkling" style="animation-delay: 0.2s;" />
+            <use href="#sparkle" x="500" y="80" class="sparkling" style="animation-delay: 0.8s;" />
+            <use href="#sparkle" x="350" y="150" class="sparkling" style="animation-delay: 1.4s;" />
+            <use href="#sparkle" x="450" y="150" class="sparkling" style="animation-delay: 0.5s;" />
+        </svg>
