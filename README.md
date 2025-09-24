@@ -20,6 +20,7 @@ Welcome! I'm Eva Mwende, a data analyst in the making with a passion for turning
 
 Want to collaborate or chat about data?  
 [LinkedIn](https://www.linkedin.com/in/eva-mwende-634906198)
+[Gmail](evakiio.m@gmail.com)
 
 
 
