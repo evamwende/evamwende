@@ -19,10 +19,9 @@ Welcome! I'm Eva Mwende, a data analyst in the making with a passion for turning
 ## <img src="lets-connect-banner.svg" alt="Let's Connect Banner" width="400"/>
 
 Want to collaborate or chat about data?  
-[LinkedIn](https://www.linkedin.com/in/eva-mwende-634906198)
-[Gmail](evakiio.m@gmail.com)
 
-
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/eva-mwende-634906198)
+[![Email](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:your.email@gmail.com)
 
 ---
 
